@@ -1,0 +1,124 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Quattrocento Sans', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    line-height: 1.6;
+    min-height: 100vh; /* Ensure body takes up full height */
+
+}
+
+/* Header styling */
+header {
+    background-color: #1e1e1e; /* Darker header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #702224;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+/* Ranking toggle buttons */
+.ranking-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.ranking-toggle button {
+    font-family: 'Quattrocento Sans', sans-serif;
+    background-color: #2a2a2a; /* Dark button */
+    border: 2px solid #444;
+    color: #e0e0e0; /* Light text */
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.ranking-toggle button.active {
+    background-color: #702224; /* Light orange when active */
+    color: #1e1e1e; /* Dark text */
+    border-color: #702224;
+}
+
+.ranking-toggle button:hover {
+    background-color: #702224;
+    color: #1e1e1e;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+th {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+tr:hover {
+    background-color: #702224;
+    cursor: pointer;
+}
+
+/* Footer styling */
+footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}

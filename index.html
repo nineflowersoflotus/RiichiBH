@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Riichi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quattrocento+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Portal Riichi</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Torneios AMCNB</a></li>
+                    <li><a href="guias.html">Yakus</a></li> <!-- Nova entrada -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="ranking-toggle">
+            <button id="btn2024" class="active" onclick="toggleRankings('2024')">2024 Rankings</button>
+            <button id="btn2025" onclick="toggleRankings('2025')">2025 Rankings</button>
+        </section>
+
+        <section class="player-rankings">
+            <h2 id="rankingYear">Top Players - 2024</h2>
+            <table id="rankingTable">
+                <!-- Rankings for 2024 will be displayed here -->
+            </table>
+        </section>
+    </main>
+    <br>
+
+    <footer>
+        <p>&copy; 2025 Mahjong Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
