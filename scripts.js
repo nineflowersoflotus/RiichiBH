@@ -58,8 +58,9 @@ function toggleRankings(year) {
     if (window.location.pathname.endsWith('/index.html')) {
     const heading = document.getElementById('rankingYear');
     const table2   = document.getElementById('rankingTable');
-    
+    console.log(heading, table2)
     if (!heading || !table2) return
+    console.log(heading, table2)
    
     document.getElementById('rankingYear').textContent = `Ranking de Torneio (Rating & Nível) - ${year}`;
 
