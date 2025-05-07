@@ -17,8 +17,8 @@
       <h1>Riichi BH</h1>
       <nav>
         <ul>
-          <li><a href="#">Ranking de Torneios</a></li>
-          <li><a href="./jogadores.html">Ranking Geral</a></li>
+          <li><a href="./index.html">Ranking de Torneios</a></li>
+          <li><a href="#jogadores-ranking">Ranking Geral</a></li>
         </ul>
       </nav>
     </div>
@@ -26,36 +26,28 @@
 
   <main>
     <!-- seção existente de rankings por ano -->
-    <section class="ranking-toggle">
-      <button id="btn2024" class="active" onclick="toggleRankings('2024')">
-        Rankings 2024
-      </button>
-      <button id="btn2025" onclick="toggleRankings('2025')">
-        Rankings 2025
-      </button>
-    </section>
 
-    <section class="player-rankings">
-      <h2 id="rankingYear">Top Players - 2024</h2>
-      <table id="rankingHead">
+
+    <!-- nova seção de Ranking de Jogadores -->
+    <section id="jogadores-ranking" class="player-rankings">
+      <h2>Ranking Geral (Rating &amp; Nível)</h2>
+      <table id="jogadoresTable">
         <thead>
-            <tr>
-                <th>Posição</th>
-                <th>Nome</th>
-                <th>Rating</th>
-                <th>Nível</th>
-              </tr>
+          <tr>
+            <th>Posição</th>
+            <th>Nome</th>
+            <th>Rating</th>
+            <th>Nível</th>
+          </tr>
         </thead>
-        <!-- Rankings por ano via scripts.js -->
-        <tbody id="rankingTable">
-            <!-- your JS will inject rows here -->
-          </tbody>
-        </table>
+        <tbody>
+          <!-- preenchido dinamicamente -->
+        </tbody>
+      </table>
     </section>
-
   </main>
-
   <br>
+
   <footer>
     <p>&copy; 2025 Riichi BH. All rights reserved.</p>
   </footer>
