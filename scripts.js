@@ -56,6 +56,10 @@ const rankingsData = {
 function toggleRankings(year) {
     // Update the heading
     if (window.location.pathname.endsWith('/index.html')) {
+    const heading = document.getElementById('rankingYear');
+    const table2   = document.getElementById('rankingTable');
+    
+    if (!heading || !table2) return
    
     document.getElementById('rankingYear').textContent = `Ranking de Torneio (Rating & Nível) - ${year}`;
 
@@ -100,7 +104,9 @@ function toggleRankings(year) {
 }
 
 // Initialize with 2024 rankings
-toggleRankings('2024');
+if (window.location.pathname.endsWith('index.html')) {
+    toggleRankings('2024');
+  }
 
 
 async function loadJogadoresRanking() {
